@@ -12,6 +12,10 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
+        <!-- Google fonts for icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
         <title>Computer SAS</title>
     </head>
     <body style="padding:35px;">
@@ -32,8 +36,8 @@
                                 Utilidades
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#ventas">Venta</a>
-                                <a class="dropdown-item" href="#calculadora">Calculadora</a>
+                                <a class="dropdown-item" href="index.php#ventas">Venta</a>
+                                <a class="dropdown-item" href="index.php#calculadora">Calculadora</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">

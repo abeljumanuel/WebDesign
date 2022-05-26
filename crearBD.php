@@ -1,15 +1,5 @@
  <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include 'config.php';
 
 // sql to create DataBase
     $sql = "CREATE DATABASE IF NOT EXISTS bdunad2022";

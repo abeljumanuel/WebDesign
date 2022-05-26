@@ -1,12 +1,10 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+include 'config.php';
+
 // Create table
 function createTable(){
-    $dbname = "bdunad2022";
-    global $username, $password, $servername;
+    global $username, $password, $servername, $dbname;
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     
     // Check connection
@@ -15,7 +13,7 @@ function createTable(){
     }
     // sql to create table
     $sql = "CREATE TABLE IF NOT EXISTS inventarios (
-        id INT(10) PRIMARY KEY,
+        id INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
         nombre VARCHAR(10),
         marca VARCHAR(10),
         cantidad INT(15),
