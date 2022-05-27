@@ -68,10 +68,10 @@
                         <select id="measureOrigin" class="form-control">
                             <option selected>Choose...</option>
                             <option value="1">Bytes</option>
-                            <option value="0.001">Kilobyte</option>
-                            <option value="0.000001">Megabyte</option>
-                            <option value="0.000000001">Gigabyte</option>
-                            <option value="0.000000000001">Terabyte</option>
+                            <option value="1000">Kilobyte</option>
+                            <option value="1000000">Megabyte</option>
+                            <option value="1000000000">Gigabyte</option>
+                            <option value="1000000000000">Terabyte</option>
                         </select>
                     </div>
                 </div>
@@ -82,10 +82,10 @@
                         <select id="measureRequired" class="form-control">
                             <option selected>Choose...</option>
                             <option value="1">Bytes</option>
-                            <option value="1000">Kilobyte</option>
-                            <option value="1000000">Megabyte</option>
-                            <option value="1000000000">Gigabyte</option>
-                            <option value="1000000000000">Terabyte</option>
+                            <option value="0.001">Kilobyte</option>
+                            <option value="0.000001">Megabyte</option>
+                            <option value="0.000000001">Gigabyte</option>
+                            <option value="0.000000000001">Terabyte</option>
                         </select>
                     </div>
                     <div class="form-group col-md-6">

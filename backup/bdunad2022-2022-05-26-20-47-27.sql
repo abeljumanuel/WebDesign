@@ -29,7 +29,7 @@ CREATE TABLE `inventarios` (
   `cantidad` int(15) DEFAULT NULL,
   `precio` int(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `inventarios` (
 
 LOCK TABLES `inventarios` WRITE;
 /*!40000 ALTER TABLE `inventarios` DISABLE KEYS */;
-INSERT INTO `inventarios` VALUES (1,'Arcelia Maria','Lagos Quintero',1,2147483647),(2,'Juan Manuel','Rojas Gonzalez',2,2147483647),(3,'Omar','Rojas Gonzalez',1,1000000),(4,'Probando','Ando',5,2147483646),(5,'Probando 2','Ando',20,2147483647);
+INSERT INTO `inventarios` VALUES (1,'Laptop 5414 Rugged','Dell',24,7800000),(2,'19 Razor','Asus',250,2300000),(3,'VAIO 13 maxima','SONY',80,2100000);
 /*!40000 ALTER TABLE `inventarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-26 19:15:30
+-- Dump completed on 2022-05-26 20:47:27
