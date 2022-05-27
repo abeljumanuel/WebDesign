@@ -21,7 +21,7 @@
     <body style="padding:35px;">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Computer SAS</a>
+                <a class="navbar-brand" href="index.php">Computer SAS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,12 +47,13 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="crearBD.php" target="_blank">Crear Base de Datos</a>
-                                <a class="dropdown-item" href="crearTabla.php" target="_blank">Crear Tabla</a>
-                                <a class="dropdown-item" href="#">Generar Reporte PDF</a>
-                                <a class="dropdown-item" href="#">Generar BackUp</a>
+                                <a class="dropdown-item" href="crearTabla.php">Crear Tabla</a>
+                                <a class="dropdown-item" href="report.php">Generar Reporte PDF</a>
+                                <a class="dropdown-item" href="backup.php">Generar BackUp</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
+        <?php // checkMySql(); ?>

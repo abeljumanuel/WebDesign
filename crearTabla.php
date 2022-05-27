@@ -14,8 +14,8 @@ function createTable(){
     // sql to create table
     $sql = "CREATE TABLE IF NOT EXISTS inventarios (
         id INT(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-        nombre VARCHAR(10),
-        marca VARCHAR(10),
+        nombre VARCHAR(50),
+        marca VARCHAR(20),
         cantidad INT(15),
         precio INT(15)
         )";
@@ -26,7 +26,7 @@ function createTable(){
             echo "Error creando tabla inventarios: " . mysqli_error($conn);
         }
     mysqli_close($conn);
-    echo "<script>setTimeout('window.close();',3000);</script>";
+    header( "refresh:3;url=index.php" );
 }
 createTable();
 ?>

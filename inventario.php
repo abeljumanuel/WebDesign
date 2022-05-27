@@ -12,14 +12,30 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php     
+                    if (!checkDB()) {
+                ?>
+                    <tr>
+                        <th scope="row">No cuenta con BD</th>
+                        <td>puede crearla</td>
+                        <td>en menu</td>
+                        <td>Administración</td>
+                        <td>Crear</td>
+                        <td>Base de Datos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
                 <?php
-                    $conn = mysqli_connect($servername, $username, $password, $dbname);
-                    $sql = "SELECT * FROM inventarios";
-                    $result = mysqli_query($conn, $sql);
+                    } else {
+                        if (checkTable('inventarios')){
+                            // cRud - R
+                            $conn = mysqli_connect($servername, $username, $password, $dbname);
+                            $sql = "SELECT * FROM inventarios";
+                            $result = mysqli_query($conn, $sql);
 
-                    if (mysqli_num_rows($result) > 0) {
-                        // output data of each row
-                        while($row = mysqli_fetch_assoc($result)) {
+                            if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
                         <th scope="row"><?php echo $row['id'] ?></th>
@@ -36,16 +52,41 @@
                             </a>      
                         </td>
                     </tr>
+                <?php
+                                }
+                            } else {
+                ?>
+                    <tr>
+                        <th scope="row"> Sin Datos </th>
+                        <td> Sin Datos </td>
+                        <td> Sin Datos </td>
+                        <td> Sin Datos </td>
+                        <td> Sin Datos </td>
+                        <td> Sin Datos </td>
+                    </tr>
+                <?php    
+                           }
+                ?>    
+                </tbody>
+        </table>
+    </form>
+    <!-- Button Interface -->
+    <a href="interface.php" class="btn btn-primary" role="button">Agregar un Producto</a>
                     <?php
-                        }
-                    }
+                        } else {
                     ?>
+                    <tr>
+                        <th scope="row">No cuenta con la Tabla</th>
+                        <td>Inventarios puede</td>
+                        <td>crearla en menu</td>
+                        <td>Administración</td>
+                        <td>Crear</td>
+                        <td>Tabla</td>
+                    </tr>
                 </tbody>
             </table>
         </form>
-
-        <!-- Button Interface -->
-        <a href="interface.php" class="btn btn-primary" role="button">Agregar un Producto</a>
-
-
-
+                    <?php
+                        }
+                    }
+                    ?>        
